@@ -1,17 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-*, ::before, ::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+:root {
+  --blue: hsl(258, 83%, 45%);
+  --hamburgger-menu: url(./Assets/Hamburger\ Menu.svg);
+  --menu-open: url(./Assets/Hamburger\ Menu\ -\ Menu\ open.svg);
 }
 
-body{
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-img{
-    width: 100%;
+body {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+.webpage__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 1rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+}
+
+.nav__links {
+  margin: 0;
+  position: fixed;
+  inset: 0 30% 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  z-index: 1000;
+  padding: min(30vh, 14rem) 3em;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--blue);
+  font-size: 2.4rem;
+  font-weight: 700;
+  transition: 350ms ease-out;
+  /* transform: translateX(-100%); */
+}
+
+.nav__links[data-visible="true"] {
+  transform: translateX(-10%);
+}
+
+.nav__links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__links a:hover,
+:focus,
+:active {
+  color: hsl(258, 50%, 80%);
+}
+
+.nav__actionbtn {
+  display: flex;
+  column-gap: 1rem;
+}
+
+input[value="Sign In"],
+input[value="Sign Up"] {
+    outline: none;
+    border: none;
+    padding: 0 1.2rem 0 1.2rem;
+    height: 2.3rem;
+    background-color: var(--blue);
+    color: white;
+    font-family: "Inter", sans-serif;
+    border-radius: .2rem;
+}
+
+input[title="menu"]{
+    width: 2rem;
+    height: 2rem;
+    background: var(--hamburgger-menu);
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    z-index: 9999;
+}
+
+.menu__open{
+    background: var(--menu-open);
 }
