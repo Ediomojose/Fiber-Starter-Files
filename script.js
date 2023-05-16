@@ -14,12 +14,10 @@ navToggle.addEventListener("click", () => {
       primaryNav.setAttribute("data-visible", true);
       navToggle.setAttribute("aria-expanded", true);
       webpageBody.classList.add('body__position');
-      navToggle.classList.add("menu__open")
     } else if (visibility === "true") {
       primaryNav.setAttribute("data-visible", false);
       navToggle.setAttribute("aria-expanded", false);
       webpageBody.classList.remove('body__position');
-      navToggle.classList.remove("menu__open")
     }
   });
 

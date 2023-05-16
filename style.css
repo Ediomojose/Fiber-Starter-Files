@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: hsl(42, 45%, 91%);
 }
 
 img {
@@ -40,26 +41,25 @@ img {
 }
 
 .nav__links {
-  margin: 0;
+  margin: 5rem 0;
   position: fixed;
   inset: 0 30% 0 0;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
   align-items: center;
   z-index: 1000;
-  padding: min(30vh, 10rem) 3em;
-  min-height: 100vh;
-  min-width: 100%;
-  background-color: var(--blue);
-  font-size: 2.4em;
-  font-weight: 700;
+  padding: min(9vh, 7rem) 3em;
+  height: 50vh;
+  min-width: 100vw;
+  background-color: hsl(42, 59%, 62%);
+  font-size: 1.5em;
   transition: 350ms ease-out;
   transform: translateX(-100%);
 }
 
 .nav__links[data-visible="true"] {
-  transform: translateX(-10%);
+  transform: translateX(-0%);
 }
 
 .nav__links a {
@@ -75,19 +75,23 @@ img {
 
 .nav__actionbtn {
   display: flex;
+  flex-direction: column;
   row-gap: 1rem;
+  
 }
 
-input[value="Sign In"],
-input[value="Sign Up"] {
+button[role="application"],
+button[role="application"] {
     outline: none;
     border: none;
-    padding: 0 3rem 0 3rem;
-    height: 2.5rem;
-    background-color: hsl(258, 50%, 80%);
+    padding: 1rem;
+    width: 15rem;
+    background-color: var(--blue);
     color: white;
+    font-size: .8em;
     font-family: "Inter", sans-serif;
     border-radius: .2rem;
+    cursor: pointer;
 }
 
 .mobile__nav__toggle{
@@ -105,8 +109,119 @@ input[value="Sign Up"] {
     position: fixed;
 }
 
-.menu__open{
+.sticky{
+    position: sticky;
+}
+
+/* .menu__open{
     background: var(--menu-open);
     background-position: center;
     background-repeat: no-repeat;
+} */
+
+/* Main page design */
+
+.content__container{
+
+}
+
+.content__section{
+    margin: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    grid-auto-flow: dense;
+}
+
+.hero__content{
+    grid-row: 2;
+}
+
+.hero__header{
+    font-size: 3.3em;
+}
+
+.hero__paragraph{
+    font-size: 1.35em;
+    line-height: 1.8rem;
+    margin: 1rem 0;
+}
+
+.hero__actionbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+button[role="button"]{
+    min-width: 100%;
+    padding: 1.1rem 6rem;
+    font-size: 1.25em;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view__example__link{
+    font-size: 1.2em;
+    color: var(--blue);
+}
+
+.micelleneous{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.creditcard__non{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.free__templates{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.article__container{
+    margin: 3rem 0;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.small__header{
+    font-size: 1.2em;
+    color: var(--blue);
+}
+
+.article__container__title{
+    font-size: 2.5em;
+}
+
+.article__grid__block{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1.5rem;
+}
+
+
+.article__grid__block__header{
+    font-size: 1.3em;
+    margin: .8rem 0;
+}
+
+.article__grid__block__text{
+    font-size: 1.38em;
+    margin: .8rem 0;
 }
