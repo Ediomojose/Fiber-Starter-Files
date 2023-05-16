@@ -225,3 +225,35 @@ button[role="button"]{
     font-size: 1.38em;
     margin: .8rem 0;
 }
+
+.trial__container{
+    background-color: var(--blue);
+    padding: 2rem 2.5rem 0 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.trial__container__text{
+  color: white;
+}
+
+.trial__block__header{
+    font-size: 2.5em;
+}
+
+.trial__block__text{
+    font-size: 1.38em;
+    margin: .8rem 0;
+}
+
+button[role="dialog"]{
+    margin: 1rem 0;
+    min-width: 100%;
+    padding: 1rem;
+    font-size: 1.3em;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: white;
+    color: var(--blue);
+    cursor: pointer;
+
+}
