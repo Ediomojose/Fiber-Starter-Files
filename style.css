@@ -432,6 +432,7 @@ button[role="dialog"] {
     .trial__container{
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
+        margin: 2rem 2rem;
     }
 
     .trial__block__header{
@@ -453,6 +454,10 @@ button[role="dialog"] {
 
     .testimonial__block button{
         font-weight: normal;
+    }
+
+    .webpage__footer{
+        padding: 2rem 5rem 2rem 5rem;
     }
 
     .footer__links{
