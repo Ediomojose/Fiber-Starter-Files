@@ -135,7 +135,7 @@ button[role="application"] {
 .content__section {
   margin: 2rem 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
   gap: 1rem;
   grid-auto-flow: dense;
 }
@@ -354,4 +354,20 @@ button[role="dialog"] {
     text-decoration: none;
     color: black;
     font-size: 1.3em;
+}
+
+@media (min-width: 540px) and (max-width: 915px){
+
+    .content__section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+    }
+
+    .hero__content{
+        grid-row: 1;
+    }
+
+    .hero__image{
+        grid-row: 1;
+    }
 }
