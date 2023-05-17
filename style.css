@@ -172,7 +172,7 @@ button[role="application"] {
 }
 
 button[role="button"] {
-  min-width: 100%;
+  width: 100%;
   padding: 1.1rem 6rem;
   font-size: 1.25em;
   font-weight: 500;
@@ -372,6 +372,8 @@ button[role="dialog"] {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-flow: dense;
         margin: 2rem 2rem;
+        place-content: center;
+        place-items: center;
     }
 
     .hero__content{
@@ -465,4 +467,148 @@ button[role="dialog"] {
     }
 
     
+}
+
+@media(min-width:1000px){
+body{
+    font-size: 15px;
+}
+
+    .content__section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+        margin: 2rem 2rem;
+        place-content: center;
+        place-items: center;
+    }
+
+    .hero__content{
+        grid-row: 1;
+        margin: 0 2rem 0 5rem;
+    }
+
+    .review{
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+        align-items: center;
+    }
+    
+    .star{
+        display: flex;
+        gap: .3rem;
+    }
+    
+    .review__text{
+        font-size: 1.1em;
+    }
+
+    .hero__image{
+        grid-row: 1;
+    }
+
+    .hero__actionbtn{
+        margin: 1rem 0;
+        flex-direction: row;
+    }
+
+    button[role="button"]{
+        width: 100%;
+        
+    }
+
+    .micelleneous{
+        flex-direction: row;
+        margin: .8rem .7rem;
+    }
+
+    .article__container{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+       
+    }
+
+    .small__header{
+        margin: 2rem 5rem;
+    }
+
+    .article__container__title{
+        margin: 0 30rem 1rem 5rem;
+    }
+
+    .article__grid__block{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin: 2rem 5rem;
+        
+    }
+
+    .article__grid__block__item{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .article__grid__block__text{
+        font-size: 1.2em;
+        
+    }
+
+    .trial__container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        place-content: center;
+        place-self: center;
+        margin: 2rem 5rem;
+       
+    }
+
+    .trial__container__text{
+        padding-top: 4rem;
+    }
+
+    .trial__block__header{
+        font-size: 2.5em;
+    }
+
+    .trial__block__text{
+        font-size: 1.5em;
+    }
+
+    
+    .testimonial__container{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5rem 5rem;
+       
+    }
+
+    .name__revenue{
+        font-size: 1.1rem;
+    }
+
+    .testimonial__text{
+        font-size: 1.5em;
+    }
+
+    .testimonial__block{
+        padding: 1.5rem;
+    }
+
+    .testimonial__block button{
+        font-weight: normal;
+        font-size: 1.2em;
+    }
+
+    .webpage__footer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .description__text{
+        padding: 0 7rem 0 0;
+    }
+
+    .footer__links{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
