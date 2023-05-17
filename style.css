@@ -129,6 +129,8 @@ button[role="application"] {
 
 /* Main page design */
 
+
+
 .content__container {
 }
 
@@ -142,6 +144,12 @@ button[role="application"] {
 
 .hero__content {
   grid-row: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.review{
+    display: none;
 }
 
 .hero__header {
@@ -235,6 +243,8 @@ button[role="button"] {
 }
 
 .trial__container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
   background-color: var(--blue);
   padding: 2rem 2.5rem 0 2.5rem;
   border-radius: 0.5rem;
@@ -361,13 +371,93 @@ button[role="dialog"] {
     .content__section{
         grid-template-columns: repeat(2, 1fr);
         grid-auto-flow: dense;
+        margin: 2rem 2rem;
     }
 
     .hero__content{
         grid-row: 1;
     }
 
+    .review{
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+        align-items: center;
+    }
+    
+    .star{
+        display: flex;
+        gap: .3rem;
+    }
+    
+    .review__text{
+        font-size: 1.1em;
+    }
+
     .hero__image{
         grid-row: 1;
     }
+
+    .hero__actionbtn{
+        margin: 1rem 0;
+    }
+
+    .article__container{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .article__container__title{
+        margin: 0 2rem 1rem 2rem;
+    }
+
+    .article__grid__block{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        
+    }
+
+    .article__grid__block__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .article__grid__block__text{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .trial__container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .trial__block__header{
+        font-size: 2.1em;
+    }
+
+    .trial__block__text{
+        font-size: 1.2em;
+    }
+
+    .testimonial__container{
+        grid-template-columns: repeat(3, 1fr);
+       
+    }
+
+    .testimonial__text{
+        font-size: 1.05em;
+    }
+
+    .testimonial__block button{
+        font-weight: normal;
+    }
+
+    .footer__links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
 }
