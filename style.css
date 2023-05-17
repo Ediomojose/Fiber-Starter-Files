@@ -46,12 +46,12 @@ img {
   inset: 0 30% 0 0;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.3rem;
   align-items: center;
   z-index: 1000;
   
-  padding: min(9vh, 7rem) 3em;
-  height: 50vh;
+  padding: min(5vh, 7rem) 3em;
+  max-height: 70vh;
   min-width: 100vw;
   background: rgba(255, 251, 251, 0.45);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -59,7 +59,7 @@ img {
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 700;
   transition: 350ms ease-out;
   transform: translateX(-100%);
