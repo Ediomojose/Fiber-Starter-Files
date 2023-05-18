@@ -49,7 +49,6 @@ img {
   gap: 1.3rem;
   align-items: center;
   z-index: 1000;
-  
   padding: min(5vh, 7rem) 3em;
   max-height: 70vh;
   min-width: 100vw;
@@ -72,12 +71,6 @@ img {
 .nav__links a {
   color: black;
   text-decoration: none;
-}
-
-.nav__links a:hover,
-:focus,
-:active {
-  color: var(--blue);
 }
 
 .nav__actionbtn {
@@ -472,7 +465,45 @@ button[role="dialog"] {
 @media(min-width:1000px){
 body{
     font-size: 15px;
+    overflow-x: hidden;
 }
+
+.webpage__header{
+    flex-direction: row;
+}
+
+.nav__links {
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    inset: 0;
+    transform: translateX(0);
+    font-weight: normal;
+    font-size: 1.2em;
+    box-shadow: none;
+    background: inherit;
+   
+   
+  }
+
+  .nav__actionbtn{
+    flex-direction: row;
+    gap: 1rem;
+    position: relative;
+    left: 12%;
+    right: 5%;
+  }
+
+  .mobile__nav__toggle{
+    display: none;
+  }
+  
 
     .content__section{
         grid-template-columns: repeat(2, 1fr);
