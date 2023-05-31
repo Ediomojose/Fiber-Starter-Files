@@ -30,6 +30,13 @@ p a{
     color: var(--blue);
 }
 
+small{
+    color: red;
+    font-style: italic;
+    padding: .4rem 0;
+    font-size: .9rem;
+}
+
 .content__block {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
@@ -72,6 +79,7 @@ form input {
   border: .1rem solid gray;
   border-radius: .3rem;
 }
+
 
 .terms {
   font-size: 1.39em;
@@ -163,7 +171,4 @@ form input {
         cursor: pointer;
     }
 
-    button[title="select"]:active, :focus{
-        background-color: white;
-    }
 }
